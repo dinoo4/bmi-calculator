@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BMI Calculator</title>
+
+		<!------ css ------>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<section id="skor-bmi">
+			<div class="container">
+				<h1>Check your BMI</h1>
+
+				<p>Enter your weight and height below to check your BMI result</p>
+
+				<div class="form-weight">
+					<label for="weight">Weight (KG)</label>
+					<input
+						type="text"
+						name="weight"
+						id="weight"
+						min="0"
+						placeholder="55"
+					/>
+				</div>
+
+				<div class="form-height">
+					<label for="height">Height (CM)</label>
+					<input
+						type="text"
+						name="height"
+						id="height"
+						min="0"
+						placeholder="170"
+					/>
+				</div>
+
+				<button id="btnCount">Calculate BMI</button>
+
+				<p id="hasilPerhitungan">
+					Your BMI is
+					<strong><span id="hasilBMI"></span></strong>
+					which means You are
+					<strong><span id="hasilIndikator"></span></strong>
+				</p>
+			</div>
+		</section>
+
+		<!---- javascript---->
+		<script src="main.js"></script>
+	</body>
+</html>
